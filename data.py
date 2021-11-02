@@ -9,4 +9,20 @@
 # -- --------------------------------------------------------------------------------------------------- -- #
 """
 
-dict_test = {'key_a': 'a', 'key_b': 'b'}
+import numpy as np
+import pandas as pd
+from pandas_datareader import data as wb
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import norm
+import matplotlib.pyplot as pltimport
+import scipy.stats
+import pylab
+import ccxt
+import calendar
+from datetime import datetime, date, timedelta
+import functions as fn
+
+dt = ['20201001', '20211001']
+df = fn.ohlcv(dt, 'BTC/USDT', '1d')
+data=df['Close']
